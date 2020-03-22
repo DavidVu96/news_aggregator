@@ -1,0 +1,25 @@
+News API key: c6edd7ed1db24b8485922e60c38c6930
+Research:
+  ✔ Research on NewsAPI @done(20-03-14 13:35)
+  ✔ Research on spring batch @created(20-03-19 21:31) @done(20-03-22 19:05)
+    https://spring.io/projects/spring-cloud-dataflow
+Design:
+  ✘ Create UML diagram for class @cancelled(20-03-22 19:06)
+    Simple atm, just articles so nothing needed yet.
+  ✔ Database design @done(20-03-22 19:06)
+  ✔ Using spring batch task for loading news to db? @created(20-03-19 21:29) @done(20-03-22 19:06)
+    Created as spring task
+
+Set up:
+  ✔ Set up DB @created(20-03-19 21:30) @done(20-03-22 19:06)
+    Using SQL db for easily work with spring JPA?
+      Consider using document-based DB for news retrieval?
+  
+Todo:
+  ✔ Create entity models @created(20-03-14 13:39) @done(20-03-22 19:06)
+    No relationship needed so far, maybe mapping of categories to articles for quick search?
+      Might actually dont need because already only query tech news?
+        Maybe find some keywords/topic e.g. AMD, Intel, Google, DevOps etc.
+    
+  ✔ Spring RESTTemplage creation @created(20-03-14 13:35) @done(20-03-22 19:06)
+  ☐ Register this task with spring data flow @created(20-03-22 19:06)
