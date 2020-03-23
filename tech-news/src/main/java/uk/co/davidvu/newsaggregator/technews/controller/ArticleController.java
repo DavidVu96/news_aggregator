@@ -25,20 +25,26 @@ public class ArticleController {
     @Autowired
     ArticleService service;
 
-    @GetMapping(path = "/recent", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<List<Article>> getRecentNews(){
+    @GetMapping(path = "/recent_all", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<List<Article>> getRecentNews() {
         log.debug("Querying all news in past hour from " + Instant.now().toString());
         return new ResponseEntity<>(service.getRecentNews(), HttpStatus.OK);
     }
 
-    @GetMapping(path = "/source", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<List<Article>> getBySourceName(@PathParam("source") String sourceName){
+    @GetMapping(path = "/source_all", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<List<Article>> getBySourceName(@PathParam("source") String sourceName) {
         log.debug("Finding article with source " + sourceName);
         return new ResponseEntity<>(service.getBySourceName(sourceName), HttpStatus.OK);
     }
 
-    @GetMapping(path = "/paged_recent", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Page<Article>> getRecentNewsPaginated(@RequestParam("page") int page, @RequestParam("size") int size){
+    @GetMapping(path = "/source", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Page<Article>> getBySourceNamePaged(@PathParam("source") String sourceName, @RequestParam("page") int page, @RequestParam("size") int size) {
+        log.debug("Finding article with source " + sourceName);
+        return new ResponseEntity<>(service.getBySourceNamePaginated(sourceName, page, size), HttpStatus.OK);
+    }
+
+    @GetMapping(path = "/recent", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Page<Article>> getRecentNewsPaginated(@RequestParam("page") int page, @RequestParam("size") int size) {
         log.debug("Query page " + page + " with size " + size);
         return new ResponseEntity<>(service.getRecentNewsPaginated(page, size), HttpStatus.OK);
     }

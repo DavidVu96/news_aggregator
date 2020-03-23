@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c6ed7f4-3a24-4663-8cd5-ab1b03940cbb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tech-news/src/main/java/uk/co/davidvu/newsaggregator/technews/service/ArticleService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tech-news/src/main/java/uk/co/davidvu/newsaggregator/technews/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tech-news/src/main/java/uk/co/davidvu/newsaggregator/technews/controller/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tech-news/src/main/java/uk/co/davidvu/newsaggregator/technews/controller/SourceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tech-news/src/main/java/uk/co/davidvu/newsaggregator/technews/controller/SourceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tech-news/src/main/java/uk/co/davidvu/newsaggregator/technews/dao/ArticleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/tech-news/src/main/java/uk/co/davidvu/newsaggregator/technews/dao/ArticleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tech-news/src/main/java/uk/co/davidvu/newsaggregator/technews/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tech-news/src/main/java/uk/co/davidvu/newsaggregator/technews/service/ArticleService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,14 +88,22 @@
       <option name="project" value="LOCAL" />
       <updated>1585005705355</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="refactor code to use service and remove logic from controller code">
+      <created>1585006361621</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1585006361621</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="changed back to spring boot web app with scheduler" />
     <MESSAGE value="change schema to use published time as id for article, and add recent search" />
     <MESSAGE value="change to JpaRepository for paginated queries" />
-    <option name="LAST_COMMIT_MESSAGE" value="change to JpaRepository for paginated queries" />
+    <MESSAGE value="refactor code to use service and remove logic from controller code" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor code to use service and remove logic from controller code" />
   </component>
   <component name="WindowStateProjectService">
     <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1584902929938">
@@ -112,10 +122,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1171" y="166" width="720" height="593" key="#xdebugger.evaluate/0.0.1920.1050/1920.-120.1920.1200@0.0.1920.1050" timestamp="1584919124365" />
-    <state x="497" y="120" key="CommitChangelistDialog2" timestamp="1585005703447">
+    <state x="497" y="120" key="CommitChangelistDialog2" timestamp="1585006359644">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="497" y="120" key="CommitChangelistDialog2/0.0.1920.1050/1920.-120.1920.1200@0.0.1920.1050" timestamp="1585005703447" />
+    <state x="497" y="120" key="CommitChangelistDialog2/0.0.1920.1050/1920.-120.1920.1200@0.0.1920.1050" timestamp="1585006359644" />
     <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1585006236496">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -156,10 +166,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="147" y="153" width="1512" height="714" key="SettingsEditor/0.0.1920.1050/1920.-120.1920.1200@0.0.1920.1050" timestamp="1584896877456" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1585005710656">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1585006363158">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.-120.1920.1200@0.0.1920.1050" timestamp="1585005710656" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.-120.1920.1200@0.0.1920.1050" timestamp="1585006363158" />
     <state x="656" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1584993196128">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

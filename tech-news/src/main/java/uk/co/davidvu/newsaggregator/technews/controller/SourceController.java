@@ -18,7 +18,7 @@ public class SourceController {
     SourceService sourceService;
 
     @GetMapping(path = "/all", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Iterable<Source>> getBySourceName() {
+    public ResponseEntity<Iterable<Source>> getAllSource() {
         return new ResponseEntity<>(sourceService.getAllSources(), HttpStatus.OK);
     }
 }

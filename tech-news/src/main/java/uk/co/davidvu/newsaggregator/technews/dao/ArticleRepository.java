@@ -13,7 +13,7 @@ import java.util.List;
 @Repository
 public interface ArticleRepository extends JpaRepository<Article, String> {
     List<Article> findAllBySource(Source source);
-    List<Article> findAllBySource(Source source, Pageable pageable);
+    Page<Article> findAllBySource(Source source, Pageable pageable);
     List<Article> findAllByPublishedAtBefore(Instant publishedAt);
     Page<Article> findAllByPublishedAtBefore(Instant publishedAt, Pageable pageable);
 }
