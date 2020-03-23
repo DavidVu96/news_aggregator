@@ -45,6 +45,13 @@ public class ArticleService {
         return articleRepository.findAllBySource(source);
     }
 
+    /**
+     * Query for source with page
+     * @param sourceName source name e.g. BBC News
+     * @param page offset
+     * @param size return size
+     * @return page of articles
+     */
     public Page<Article> getBySourceNamePaginated(String sourceName, int page, int size){
         Source source = sourceRepository.findByName(sourceName);
         return articleRepository.findAllBySource(source, PageRequest.of(page,size));
