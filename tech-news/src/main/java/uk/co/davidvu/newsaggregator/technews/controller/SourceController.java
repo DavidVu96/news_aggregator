@@ -7,18 +7,18 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import uk.co.davidvu.newsaggregator.technews.dao.SourceRepository;
 import uk.co.davidvu.newsaggregator.technews.model.Source;
+import uk.co.davidvu.newsaggregator.technews.service.SourceService;
 
 @Controller
 @RequestMapping(path = "/source")
 public class SourceController {
 
     @Autowired
-    SourceRepository sourceRepository;
+    SourceService sourceService;
 
     @GetMapping(path = "/all", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Iterable<Source>> getBySourceName() {
-        return new ResponseEntity<>(sourceRepository.findAll(), HttpStatus.OK);
+        return new ResponseEntity<>(sourceService.getAllSources(), HttpStatus.OK);
     }
 }
