@@ -7,7 +7,7 @@ import java.util.List;
 
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class NewsApiResponse {
+public class NewsApiArticleResponse {
     private String status;
     private Integer totalResults;
     private List<Article> articles;

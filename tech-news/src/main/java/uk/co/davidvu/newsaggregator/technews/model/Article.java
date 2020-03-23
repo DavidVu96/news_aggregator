@@ -1,6 +1,7 @@
 package uk.co.davidvu.newsaggregator.technews.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -11,11 +12,6 @@ import java.time.Instant;
 @Data
 @Table
 public class Article {
-
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    @Column
-//    private Integer id;
 
     @Id
     @Column

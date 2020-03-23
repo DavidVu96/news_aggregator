@@ -1,7 +1,7 @@
 newsapi:
   token: c6edd7ed1db24b8485922e60c38c6930
   url: http://newsapi.org/v2
-  countries: ["us", "gb"]
+
 spring:
   datasource:
 #    driverClassName: org.h2.Driver

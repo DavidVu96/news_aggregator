@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.net.URL;
 import java.util.List;
 import java.util.Objects;
 
@@ -13,8 +14,21 @@ import java.util.Objects;
 public class Source{
 
     @Id
-    private String name;
     private String id;
+    @Column
+    private String name;
+
+    @Column(columnDefinition = "TEXT")
+    private String description;
+
+    @Column(columnDefinition = "TEXT")
+    private URL url;
+    @Column
+    private String category;
+    @Column
+    private String language;
+    @Column
+    private String country;
 
 
     @OneToMany
