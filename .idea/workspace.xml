@@ -2,36 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c6ed7f4-3a24-4663-8cd5-ab1b03940cbb" name="Default Changelist" comment="changed back to spring boot web app with scheduler">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tech-news/src/main/java/uk/co/davidvu/newsaggregator/technews/controller/ArticleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tech-news/src/main/java/uk/co/davidvu/newsaggregator/technews/model/NewsApiSourceResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tech-news/src/main/java/uk/co/davidvu/newsaggregator/technews/schedule/NewsAPIScheduler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tech-news/src/main/java/uk/co/davidvu/newsaggregator/technews/utils/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_core_1_3_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_latencyutils_LatencyUtils_2_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_batch_spring_batch_infrastructure_4_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_deployer_autoconfigure_2_1_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_deployer_resource_support_2_1_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_deployer_spi_2_1_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_task_2_2_3_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_task_batch_2_2_3_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_task_core_2_2_3_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_task_stream_2_2_3_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_retry_spring_retry_1_2_5_RELEASE.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-news/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tech-news/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-news/src/main/java/uk/co/davidvu/newsaggregator/technews/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tech-news/src/main/java/uk/co/davidvu/newsaggregator/technews/NewsAggregatorApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-news/src/main/java/uk/co/davidvu/newsaggregator/technews/config/TaskConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-news/src/main/java/uk/co/davidvu/newsaggregator/technews/dao/NewsArticleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/tech-news/src/main/java/uk/co/davidvu/newsaggregator/technews/dao/ArticleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-news/src/main/java/uk/co/davidvu/newsaggregator/technews/dao/NewsSourceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/tech-news/src/main/java/uk/co/davidvu/newsaggregator/technews/dao/SourceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tech-news/src/main/java/uk/co/davidvu/newsaggregator/technews/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tech-news/src/main/java/uk/co/davidvu/newsaggregator/technews/controller/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tech-news/src/main/java/uk/co/davidvu/newsaggregator/technews/dao/ArticleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/tech-news/src/main/java/uk/co/davidvu/newsaggregator/technews/dao/ArticleRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tech-news/src/main/java/uk/co/davidvu/newsaggregator/technews/model/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/tech-news/src/main/java/uk/co/davidvu/newsaggregator/technews/model/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-news/src/main/java/uk/co/davidvu/newsaggregator/technews/model/NewsApiResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/tech-news/src/main/java/uk/co/davidvu/newsaggregator/technews/model/NewsApiArticleResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-news/src/main/java/uk/co/davidvu/newsaggregator/technews/model/Source.java" beforeDir="false" afterPath="$PROJECT_DIR$/tech-news/src/main/java/uk/co/davidvu/newsaggregator/technews/model/Source.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-news/src/main/java/uk/co/davidvu/newsaggregator/technews/service/NewsApiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tech-news/src/main/java/uk/co/davidvu/newsaggregator/technews/service/NewsApiService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-news/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tech-news/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-news/src/test/java/uk/co/davidvu/newsaggregator/technews/DemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tech-news/src/test/java/uk/co/davidvu/newsaggregator/technews/NewsAggregatorApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,26 +96,26 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1171" y="166" width="720" height="593" key="#xdebugger.evaluate/0.0.1920.1050/1920.-120.1920.1200@0.0.1920.1050" timestamp="1584919124365" />
-    <state x="497" y="120" key="CommitChangelistDialog2" timestamp="1584921798068">
+    <state x="497" y="120" key="CommitChangelistDialog2" timestamp="1584921908371">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="497" y="120" key="CommitChangelistDialog2/0.0.1920.1050/1920.-120.1920.1200@0.0.1920.1050" timestamp="1584921798068" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1584921798091">
+    <state x="497" y="120" key="CommitChangelistDialog2/0.0.1920.1050/1920.-120.1920.1200@0.0.1920.1050" timestamp="1584921908371" />
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1584995588898">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.-120.1920.1200@0.0.1920.1050" timestamp="1584921798091" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1584921798090">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.-120.1920.1200@0.0.1920.1050" timestamp="1584995588898" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1584995588898">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050/1920.-120.1920.1200@0.0.1920.1050" timestamp="1584921798090" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1584921798090">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050/1920.-120.1920.1200@0.0.1920.1050" timestamp="1584995588898" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1584995588898">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050/1920.-120.1920.1200@0.0.1920.1050" timestamp="1584921798090" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1584921798090">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050/1920.-120.1920.1200@0.0.1920.1050" timestamp="1584995588898" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1584995588898">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050/1920.-120.1920.1200@0.0.1920.1050" timestamp="1584921798090" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050/1920.-120.1920.1200@0.0.1920.1050" timestamp="1584995588898" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1584919961078">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -166,10 +140,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="147" y="153" width="1512" height="714" key="SettingsEditor/0.0.1920.1050/1920.-120.1920.1200@0.0.1920.1050" timestamp="1584896877456" />
-    <state x="656" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1584916978757">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1584921911990">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="656" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/1920.-120.1920.1200@0.0.1920.1050" timestamp="1584916978757" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.-120.1920.1200@0.0.1920.1050" timestamp="1584921911990" />
+    <state x="656" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1584993196128">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="656" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/1920.-120.1920.1200@0.0.1920.1050" timestamp="1584993196128" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1584903352105">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

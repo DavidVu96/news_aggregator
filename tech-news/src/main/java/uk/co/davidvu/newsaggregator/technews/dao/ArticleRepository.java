@@ -10,6 +10,6 @@ import java.util.List;
 
 @Repository
 public interface ArticleRepository extends CrudRepository<Article, String> {
-//    List<Article> findAllBeforePublishedat(Instant publishedAt);
     List<Article> findAllBySource(Source source);
+    List<Article> findAllByPublishedAtBefore(Instant publishedAt);
 }

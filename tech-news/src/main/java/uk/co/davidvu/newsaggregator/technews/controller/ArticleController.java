@@ -1,5 +1,6 @@
 package uk.co.davidvu.newsaggregator.technews.controller;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -20,6 +21,7 @@ import java.util.List;
 
 @Controller
 @RequestMapping("/articles")
+@Slf4j
 public class ArticleController {
 
     @Autowired
@@ -28,13 +30,14 @@ public class ArticleController {
     @Autowired
     SourceRepository sourceRepository;
 
-//    @GetMapping(path = "/recent", produces = MediaType.APPLICATION_JSON_VALUE)
-//    public ResponseEntity<List<Article >> getRecentNews(){
-//        return new ResponseEntity<>(articleRepository.findAllBeforePublishedat(Instant.now().minus(1, ChronoUnit.HOURS)), HttpStatus.OK);
-//    }
+    @GetMapping(path = "/recent", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<List<Article>> getRecentNews(){
+        log.debug("Querying all news in past hour from " + Instant.now().toString());
+        return new ResponseEntity<>(articleRepository.findAllByPublishedAtBefore(Instant.now().minus(1, ChronoUnit.HOURS)), HttpStatus.OK);
+    }
 
     @GetMapping(path = "/source", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<List<Article >> getBySourceName(@PathParam("source") String sourceName){
+    public ResponseEntity<List<Article>> getBySourceName(@PathParam("source") String sourceName){
         Source source = sourceRepository.findByName(sourceName);
         return new ResponseEntity<>(articleRepository.findAllBySource(source), HttpStatus.OK);
     }

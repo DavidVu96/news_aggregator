@@ -13,7 +13,6 @@ import java.time.Instant;
 @Table
 public class Article {
 
-    @Id
     @Column
     private String title;
 
@@ -29,6 +28,7 @@ public class Article {
     @Column(columnDefinition = "TEXT")
     private URL urlToImage;
 
+    @Id
     @Column
     private Instant publishedAt;
 
